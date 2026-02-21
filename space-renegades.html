@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="dark theme-game">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Renegades | Manathos Games</title>
+    <meta name="description"
+        content="Space Renegades - A gritty, fast-paced Real-Time Strategy game set in the outer rims with massive cyborg armies.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Custom Cursor using main logic -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="background-effects force-dark">
+        <!-- Re-using orb logic but overridden by theme-game CSS -->
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Transparent Navbar returning to Home -->
+    <nav class="navbar animate-drop game-nav">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><i class="fa-solid fa-arrow-left"
+                    style="margin-right: 12px; font-size: 1rem;"></i> MANATHOS</a>
+            <ul class="nav-links">
+                <li><a href="#features">Intel</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#alpha" class="text-glow">Join Alpha</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Massive Parallax Hero using the game art -->
+        <section class="hero game-hero parallax-bg">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content text-center">
+                <span class="badge badge-game animate-fade-in stagger-1">RTS Strategy / Action</span>
+                <h1 class="animate-fade-in stagger-2 glitch-title" data-text="SPACE RENEGADES">SPACE RENEGADES</h1>
+                <p class="subtitle animate-fade-in stagger-3">Command massive fleets of cybernetic combatants. Manage
+                    dynamic planetary economies. Conquer the outer rim before the core worlds collapse.</p>
+                <div class="cta-group animate-fade-in stagger-4 flex-center">
+                    <a href="#features" class="btn btn-primary btn-game">Declassify Intel <i
+                            class="fa-solid fa-chevron-down" style="margin-left:8px;"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="game-features wrapper">
+            <div class="container">
+                <div class="section-header reveal-up text-center">
+                    <h2 class="gradient-game">Tactical Overview</h2>
+                    <p>Core systems designed for maximum strategic depth and brutal efficiency.</p>
+                </div>
+
+                <div class="features-grid projects-grid">
+                    <!-- Feature 1 -->
+                    <div class="project-card reveal-flip" tabindex="0">
+                        <div class="card-inner">
+                            <div class="card-front feature-card-front glass-panel glass-game">
+                                <div class="feature-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+                                <h3>Massive Scale Battles</h3>
+                                <div class="interaction-hint" style="margin-top:auto;"><i
+                                        class="fa-solid fa-arrows-rotate"></i> Flip for Intel</div>
+                            </div>
+                            <div class="card-back glass-panel glass-game">
+                                <h3>Tactical Breakdown</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Thousands of simulated units</li>
+                                    <li><i class="fa-solid fa-check"></i> Custom heavy pathing engine</li>
+                                    <li><i class="fa-solid fa-check"></i> Dynamic squad formations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="project-card reveal-flip delay-100" tabindex="0">
+                        <div class="card-inner">
+                            <div class="card-front feature-card-front glass-panel glass-game">
+                                <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+                                <h3>Dynamic Resource Flow</h3>
+                                <div class="interaction-hint" style="margin-top:auto;"><i
+                                        class="fa-solid fa-arrows-rotate"></i> Flip for Intel</div>
+                            </div>
+                            <div class="card-back glass-panel glass-game">
+                                <h3>Logistics Breakdown</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Extract from tectonic vents</li>
+                                    <li><i class="fa-solid fa-check"></i> Interceptable supply convoys</li>
+                                    <li><i class="fa-solid fa-check"></i> Deep economic sabotage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="project-card reveal-flip delay-200" tabindex="0">
+                        <div class="card-inner">
+                            <div class="card-front feature-card-front glass-panel glass-game">
+                                <div class="feature-icon"><i class="fa-solid fa-microchip"></i></div>
+                                <h3>Neural-Net AI</h3>
+                                <div class="interaction-hint" style="margin-top:auto;"><i
+                                        class="fa-solid fa-arrows-rotate"></i> Flip for Intel</div>
+                            </div>
+                            <div class="card-back glass-panel glass-game">
+                                <h3>AI Breakdown</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Adapts to your deployments</li>
+                                    <li><i class="fa-solid fa-check"></i> Learns map choke-points</li>
+                                    <li><i class="fa-solid fa-check"></i> Counter-measures automatically built</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Grid (In-game Screenshots) -->
+        <section id="media" class="wrapper">
+            <div class="container">
+                <div class="section-header reveal-up text-center">
+                    <h2 class="gradient-game">Classified Intel</h2>
+                    <p>Leaked visual data from the orbital rim operations.</p>
+                </div>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev-btn" aria-label="Previous Slide"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+
+                    <div class="carousel-viewport">
+                        <div class="carousel-track">
+                            <div class="media-item glass-panel glass-game carousel-slide active">
+                                <img src="assets/media/isometric.png" alt="RTS Isometric Gameplay" loading="lazy">
+                                <div class="media-overlay"><span>Combat Footage #0942</span></div>
+                            </div>
+                            <div class="media-item glass-panel glass-game carousel-slide">
+                                <img src="assets/media/command_ui.png" alt="Command HUD UI" loading="lazy">
+                                <div class="media-overlay"><span>Command Terminal Intercept</span></div>
+                            </div>
+                            <div class="media-item glass-panel glass-game carousel-slide">
+                                <img src="assets/media/orbital.png" alt="Orbital Space Battle" loading="lazy">
+                                <div class="media-overlay"><span>Planetary Bombardment Footage</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn next-btn" aria-label="Next Slide"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Large full-width banner bridging features and CTA -->
+        <section class="quote-banner reveal-up">
+            <div class="container text-center">
+                <h2 class="quote-text">"They burned the core worlds.<br><span class="gradient-game">We own the
+                        rim.</span>"</h2>
+            </div>
+        </section>
+
+        <!-- Pre-Alpha Call to Action -->
+        <section id="alpha" class="alpha-cta wrapper">
+            <div class="container reveal-up">
+                <div class="glass-panel glass-game text-center pulse-border">
+                    <i class="fa-solid fa-rocket large-icon glow-icon"></i>
+                    <h2>Enlist for Closed Alpha</h2>
+                    <p>The servers are booting up. Secure your command code and report for combat testing.</p>
+                    <form class="alpha-form">
+                        <div class="input-group">
+                            <input type="email" id="alpha-email" required placeholder=" ">
+                            <label for="alpha-email">Enter Secure Comms Channel</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-game">Request Access <i
+                                class="fa-solid fa-satellite-dish" style="margin-left: 8px;"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="game-footer">
+        <div class="container text-center">
+            <h2 class="glitch-title" data-text="MANATHOS">MANATHOS</h2>
+            <p>&copy; 2026 Space Renegades. A Manathos Production.</p>
+            <p class="disclaimer">Gameplay mechanics and graphics are subject to extreme evolution.</p>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

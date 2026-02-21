@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Dash | Manathos Creators</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-app">
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Transparent Navbar returning to Home -->
+    <nav class="navbar animate-drop">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><i class="fa-solid fa-arrow-left"
+                    style="margin-right: 12px; font-size: 1rem;"></i> MANATHOS</a>
+            <ul class="nav-links">
+                <li><a href="#features">Capabilities</a></li>
+                <li><a href="#download" class="text-glow">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Clean App Hero -->
+        <section class="hero app-hero">
+            <div class="container">
+                <div class="app-hero-layout">
+                    <!-- Text Content -->
+                    <div class="hero-content">
+                        <span class="badge badge-app animate-fade-in stagger-1">Windows Utility / Scripting</span>
+                        <h1 class="animate-fade-in stagger-2 glitch-title" data-text="AUTO DASH">AUTO DASH</h1>
+                        <p class="subtitle animate-fade-in stagger-3">Automate the tedious. Command your workspace.
+                            Execute complex multi-step macros with a single keystroke using our lightweight, deeply
+                            integrated Windows utility.</p>
+                        <div class="cta-group animate-fade-in stagger-4">
+                            <a href="#download" class="btn btn-primary btn-app">Get Auto Dash <i
+                                    class="fa-solid fa-download" style="margin-left:8px;"></i></a>
+                            <a href="#features" class="btn btn-outline"
+                                style="border-color: rgba(255,255,255,0.2);">Explore Features</a>
+                        </div>
+                    </div>
+
+                    <!-- Floating App Mockup -->
+                    <div class="app-mockup-container animate-fade-in stagger-3 relative">
+                        <div class="glass-panel glass-app floating-mockup">
+                            <img src="assets/autodash_mockup.png" alt="Auto Dash Interface" class="mockup-img">
+                        </div>
+                        <div class="mockup-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Breakdown -->
+        <section id="features" class="wrapper bg-alt">
+            <div class="container">
+                <div class="section-header reveal-up text-center">
+                    <h2 class="gradient-app">Core Capabilities</h2>
+                    <p>Designed for power users who demand total control over their workflow.</p>
+                </div>
+
+                <div class="features-grid projects-grid" style="margin-top: 4rem;">
+                    <!-- Feature 1 -->
+                    <div class="project-card reveal-flip" tabindex="0">
+                        <div class="card-inner">
+                            <div class="card-front feature-card-front glass-panel glass-app">
+                                <div class="feature-icon app-icon"><i class="fa-solid fa-code-branch"></i></div>
+                                <h3>Logic-Based Macros</h3>
+                                <div class="interaction-hint" style="margin-top:auto;"><i
+                                        class="fa-solid fa-arrows-rotate"></i> Flip to inspect</div>
+                            </div>
+                            <div class="card-back glass-panel glass-app">
+                                <h3>Macro Execution</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-bolt text-app"></i> Pixel-perfect click automation</li>
+                                    <li><i class="fa-solid fa-bolt text-app"></i> Conditional branching logic</li>
+                                    <li><i class="fa-solid fa-bolt text-app"></i> Variable state tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="project-card reveal-flip delay-100" tabindex="0">
+                        <div class="card-inner">
+                            <div class="card-front feature-card-front glass-panel glass-app">
+                                <div class="feature-icon app-icon"><i class="fa-regular fa-window-restore"></i></div>
+                                <h3>Window Management</h3>
+                                <div class="interaction-hint" style="margin-top:auto;"><i
+                                        class="fa-solid fa-arrows-rotate"></i> Flip to inspect</div>
+                            </div>
+                            <div class="card-back glass-panel glass-app">
+                                <h3>Workspace Control</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-bolt text-app"></i> Instantly snap layouts</li>
+                                    <li><i class="fa-solid fa-bolt text-app"></i> Pin critical views 'always on top'
+                                    </li>
+                                    <li><i class="fa-solid fa-bolt text-app"></i> Hide distractions with a hotkey</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="project-card reveal-flip delay-200" tabindex="0">
+                        <div class="card-inner">
+                            <div class="card-front feature-card-front glass-panel glass-app">
+                                <div class="feature-icon app-icon"><i class="fa-solid fa-keyboard"></i></div>
+                                <h3>Global Hotkeys</h3>
+                                <div class="interaction-hint" style="margin-top:auto;"><i
+                                        class="fa-solid fa-arrows-rotate"></i> Flip to inspect</div>
+                            </div>
+                            <div class="card-back glass-panel glass-app">
+                                <h3>Input Override</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-bolt text-app"></i> Remap physical keys entirely</li>
+                                    <li><i class="fa-solid fa-bolt text-app"></i> Context-sensitive bindings</li>
+                                    <li><i class="fa-solid fa-bolt text-app"></i> Intercept and block inputs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Banner -->
+        <section id="download" class="wrapper">
+            <div class="container reveal-up">
+                <div class="glass-panel glass-app download-banner"
+                    style="display: flex; justify-content: space-between; align-items: center; padding: 4rem;">
+                    <div class="download-info">
+                        <h2>Start Automating Today</h2>
+                        <p style="margin-top: 1rem; color: #a0a0a5;">Download Auto Dash v2.4.1 for Windows
+                            10/11.<br>Requires 15mb disk space.</p>
+                    </div>
+                    <div class="download-action">
+                        <button class="btn btn-primary btn-app btn-large"><i class="fa-brands fa-windows"
+                                style="margin-right: 12px;"></i> Download (.msi)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center" style="padding: 4rem 0;">
+            <p>&copy; 2026 Manathos. Software that empowers.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
