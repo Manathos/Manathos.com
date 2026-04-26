@@ -1,0 +1,15 @@
+.git
+.git/**
+_deploy
+_deploy/**
+.wrangler
+.wrangler/**
+node_modules
+node_modules/**
+wrangler.jsonc
+.assetsignore
+.gitignore
+package.json
+package-lock.json
+CNAME
+*.zip

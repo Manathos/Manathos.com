@@ -4,26 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manathos | Developer & Creator</title>
+    <title>Manathos | Apps, Games & Interactive Systems</title>
     <meta name="description"
-        content="Portfolio of Manathos, showcasing modern applications from utility tools like Auto Dash to games like Space Renegades.">
+        content="Portfolio of Manathos, featuring live canvas game Star Stations, Windows utility Auto Dash, and strategy game prototype Space Renegades.">
 
-    <!-- Google Fonts: Clash Display + Inter for a modern look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;900&display=swap"
         rel="stylesheet">
 
-    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Custom Cursor Setup -->
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
 
@@ -45,109 +40,103 @@
     </nav>
 
     <main>
-        <section class="hero wrapper">
-            <div class="container hero-content">
-                <span class="badge animate-fade-in stagger-1">Aspiring App Developer</span>
-                <h1 class="animate-fade-in stagger-2">Building <span class="gradient-text">digital
-                        realities.</span><br>Crafting tools for the modern web.</h1>
-                <p class="subtitle animate-fade-in stagger-3">Exploring every sector of application development, from
-                    high-stakes RTS gaming to streamlined e-commerce content generation.</p>
-                <div class="cta-group animate-fade-in stagger-4">
-                    <a href="#work" class="btn btn-primary">Explore My Universe</a>
+        <section class="hero wrapper hero-refresh">
+            <div class="container hero-layout">
+                <div class="hero-content">
+                    <span class="badge animate-fade-in stagger-1">Independent App & Game Developer</span>
+                    <h1 class="animate-fade-in stagger-2">Building <span class="gradient-text">playable systems</span>
+                        and practical tools.</h1>
+                    <p class="subtitle animate-fade-in stagger-3">Manathos is where browser games, Windows utilities,
+                        and experimental interface ideas get turned into real, shippable projects.</p>
+                    <div class="cta-group animate-fade-in stagger-4">
+                        <a href="#work" class="btn btn-primary">View Projects</a>
+                        <a href="https://star-stations.manathos.com" target="_blank" rel="noopener"
+                            class="btn btn-outline">Play Star Stations</a>
+                    </div>
+                    <div class="hero-proof animate-fade-in stagger-5" aria-label="Project highlights">
+                        <span><strong>Live</strong> canvas game</span>
+                        <span><strong>Native</strong> Windows tooling</span>
+                        <span><strong>Prototype</strong> strategy systems</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="scroll-indicator animate-fade-in stagger-5">
-                <span>Scroll to discover</span>
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
+                <a href="star-stations.html" class="hero-showcase animate-fade-in stagger-4"
+                    aria-label="Open Star Stations case study">
+                    <img src="assets/starstations/main-menu-box-art-4x3.png" alt="Star Stations key art">
+                    <div class="showcase-caption">
+                        <span>Latest Project</span>
+                        <strong>Star Stations</strong>
+                    </div>
+                </a>
             </div>
         </section>
 
         <section id="work" class="projects wrapper">
             <div class="container">
                 <div class="section-header reveal-up">
-                    <h2 class="gradient-text">Featured Projects</h2>
-                    <p>Applications currently in development or released into the wild.</p>
+                    <h2 class="gradient-text">Featured Work</h2>
+                    <p>Live projects and prototypes with enough substance to inspect, play, or build on.</p>
                 </div>
 
-                <div class="projects-grid">
-                    <!-- Project 1: Auto Dash -->
-                    <article class="project-card reveal-flip" tabindex="0">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="card-visual auto-dash-visual">
-                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                </div>
-                                <div class="card-body">
-                                    <span class="project-tag">Utility / E-Com</span>
-                                    <h3>Auto Dash</h3>
-                                    <p>A Windows utility that supercharges listing workflows. Generate complex composite
-                                        images instantly and post directly to major e-commerce platforms.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <span class="interaction-hint">Hover to explore <i
-                                            class="fa-solid fa-arrow-right"></i></span>
-                                </div>
+                <div class="portfolio-grid">
+                    <article class="portfolio-card portfolio-card-featured reveal-up">
+                        <a href="star-stations.html" class="portfolio-visual">
+                            <img src="assets/starstations/main-menu-box-art-4x3.png" alt="Star Stations game art">
+                        </a>
+                        <div class="portfolio-body">
+                            <span class="project-tag tag-cyan">Live Game / Canvas</span>
+                            <h3>Star Stations</h3>
+                            <p>A mouse-guided arcade defense game with mining drones, merchant upgrades, boss waves,
+                                audio, video sequences, and mobile touch handling.</p>
+                            <div class="project-meta">
+                                <span>Playable now</span>
+                                <span>Pixel canvas</span>
+                                <span>Roguelite loop</span>
                             </div>
-                            <div class="card-back">
-                                <h3>Tech Breakdown</h3>
-                                <ul>
-                                    <li><i class="fa-brands fa-windows"></i> Native Windows App</li>
-                                    <li><i class="fa-solid fa-image"></i> Image Compositing Engine</li>
-                                    <li><i class="fa-solid fa-network-wired"></i> E-Com API Integrations</li>
-                                    <li><i class="fa-solid fa-bolt"></i> Workflow Automation</li>
-                                </ul>
+                            <div class="portfolio-actions">
+                                <a href="star-stations.html" class="btn btn-primary btn-sm">Case Study</a>
+                                <a href="https://star-stations.manathos.com" target="_blank" rel="noopener"
+                                    class="btn btn-outline btn-sm">Play Live</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card reveal-up delay-100">
+                        <a href="auto-dash.html" class="portfolio-visual">
+                            <img src="assets/autodash_mockup.png" alt="Auto Dash interface mockup">
+                        </a>
+                        <div class="portfolio-body">
+                            <span class="project-tag tag-blue">Windows Utility</span>
+                            <h3>Auto Dash</h3>
+                            <p>A desktop automation concept focused on macro execution, workspace control, global
+                                hotkeys, and faster repetitive workflows.</p>
+                            <div class="project-meta">
+                                <span>Automation</span>
+                                <span>Workflow UI</span>
+                                <span>Windows</span>
+                            </div>
+                            <div class="portfolio-actions">
                                 <a href="auto-dash.html" class="btn btn-outline btn-sm">View Case Study</a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 2: Space Renegades -->
-                    <article class="project-card reveal-flip delay-100" tabindex="0">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="card-visual space-renegades-visual">
-                                    <i class="fa-solid fa-rocket"></i>
-                                </div>
-                                <div class="card-body">
-                                    <span class="project-tag">Game Dev / RTS</span>
-                                    <h3>Space Renegades</h3>
-                                    <p>A fast-paced Real-Time Strategy game set in the outer rims. Manage resources,
-                                        build your fleet, and conquer sectors in a dynamic, evolving galaxy.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <span class="interaction-hint">Hover to explore <i
-                                            class="fa-solid fa-arrow-right"></i></span>
-                                </div>
+                    <article class="portfolio-card reveal-up delay-200">
+                        <a href="space-renegades.html" class="portfolio-visual">
+                            <img src="assets/space_renegades_splash.jpg" alt="Space Renegades key art">
+                        </a>
+                        <div class="portfolio-body">
+                            <span class="project-tag tag-rose">Strategy Prototype</span>
+                            <h3>Space Renegades</h3>
+                            <p>A sci-fi RTS direction with fleet combat, dynamic economy ideas, command UI concepts,
+                                and cinematic world-building.</p>
+                            <div class="project-meta">
+                                <span>RTS systems</span>
+                                <span>Fleet combat</span>
+                                <span>World art</span>
                             </div>
-                            <div class="card-back">
-                                <h3>Game Features</h3>
-                                <ul>
-                                    <li><i class="fa-solid fa-users-viewfinder"></i> Massive Fleet Battles</li>
-                                    <li><i class="fa-solid fa-gem"></i> Dynamic Economy</li>
-                                    <li><i class="fa-solid fa-brain"></i> Advanced AI Opponents</li>
-                                    <li><i class="fa-solid fa-globe"></i> Procedural Star Systems</li>
-                                </ul>
+                            <div class="portfolio-actions">
                                 <a href="space-renegades.html" class="btn btn-outline btn-sm">Command Center</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Placeholder: Future Expansion -->
-                    <article class="project-card placeholder-card reveal-flip delay-200">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="card-visual future-visual">
-                                    <i class="fa-solid fa-plus lock-icon"></i>
-                                </div>
-                                <div class="card-body">
-                                    <span class="project-tag">Classified</span>
-                                    <h3>Next Frontier</h3>
-                                    <p>The roadmap extends beyond utilities and games. Mobile apps, productivity tools,
-                                        and web services are currently synthesizing in the background.</p>
-                                </div>
                             </div>
                         </div>
                     </article>
@@ -158,56 +147,34 @@
         <section id="about" class="about wrapper">
             <div class="container reveal-up">
                 <div class="section-header">
-                    <h2 class="gradient-text">About the Developer</h2>
-                    <p>The matrix of skills powering these experiences.</p>
+                    <h2 class="gradient-text">About the Builder</h2>
+                    <p>Design, code, systems thinking, and a taste for interfaces that feel alive.</p>
                 </div>
 
-                <div class="about-content glass-panel">
+                <div class="about-content glass-panel refresh-panel">
                     <div class="about-text">
-                        <p>I am Manathos. An aspiring app developer relentlessly focused on pushing the boundaries of
-                            what interfaces can do.</p>
-                        <p>My philosophy is simple: whether it's a productivity utility or a sprawling real-time
-                            strategy game, the user deserves an experience that feels fluid, responsive, and undeniably
-                            premium. I don't confine myself to one sector—I build the tools and the entertainment of
-                            tomorrow.</p>
+                        <p>I build across categories because the same craft shows up everywhere: clear feedback,
+                            responsive controls, readable state, and enough polish that the work feels intentional.</p>
+                        <p>The current Manathos stack spans browser canvas games, desktop utility concepts, game UI,
+                            animation, asset pipelines, and deployment on Cloudflare.</p>
                     </div>
 
-                    <div class="skills-showcase">
-                        <div class="skill-track">
-                            <div class="skill-name">
-                                <span>UI / UX Design</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill ui-fill" style="width: 95%;"></div>
-                            </div>
+                    <div class="capability-list" aria-label="Core capabilities">
+                        <div>
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Canvas gameplay systems</span>
                         </div>
-                        <div class="skill-track">
-                            <div class="skill-name">
-                                <span>Game Logic & Systems</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill game-fill" style="width: 88%;"></div>
-                            </div>
+                        <div>
+                            <i class="fa-solid fa-desktop"></i>
+                            <span>Desktop utility workflows</span>
                         </div>
-                        <div class="skill-track">
-                            <div class="skill-name">
-                                <span>Frontend Architecture</span>
-                                <span>92%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill front-fill" style="width: 92%;"></div>
-                            </div>
+                        <div>
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>Interface polish and motion</span>
                         </div>
-                        <div class="skill-track">
-                            <div class="skill-name">
-                                <span>Backend / API Integration</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-fill back-fill" style="width: 85%;"></div>
-                            </div>
+                        <div>
+                            <i class="fa-solid fa-cloud"></i>
+                            <span>Static deployment and hosting</span>
                         </div>
                     </div>
                 </div>
@@ -216,20 +183,20 @@
 
         <section id="vision" class="vision wrapper">
             <div class="container reveal-up">
-                <div class="vision-content glass-panel">
-                    <h2>The <span class="gradient-text">Vision</span></h2>
+                <div class="vision-content glass-panel refresh-panel">
+                    <h2>How <span class="gradient-text">Manathos</span> Builds</h2>
                     <div class="vision-grid">
                         <div class="v-col">
-                            <i class="fa-solid fa-layer-group"></i>
-                            <h4>Cross-Sector</h4>
-                            <p>I don't believe in siloing skills. A good developer can build a rigid business tool in
-                                the morning and script a chaotic game system in the afternoon.</p>
+                            <i class="fa-solid fa-circle-play"></i>
+                            <h4>Playable First</h4>
+                            <p>Projects are strongest when there is something real to try. Star Stations now leads the
+                                portfolio because it is live, interactive, and easy to evaluate.</p>
                         </div>
                         <div class="v-col">
                             <i class="fa-solid fa-gauge-high"></i>
-                            <h4>Performance First</h4>
-                            <p>Whether it's an RTS handling thousands of units or a web shell organizing projects,
-                                optimization and buttery smooth interfaces are mandatory.</p>
+                            <h4>Performance Matters</h4>
+                            <p>Whether it is a canvas game loop or a productivity tool, the interface should respond
+                                quickly, communicate clearly, and avoid wasted motion.</p>
                         </div>
                     </div>
                 </div>
@@ -239,43 +206,24 @@
 
     <footer id="contact" class="reveal-up">
         <div class="container">
-            <div class="contact-section glass-panel">
+            <div class="contact-section glass-panel refresh-panel">
                 <div class="contact-info">
-                    <h2 class="gradient-text">Initiate Protocol</h2>
-                    <p>Whether you're looking to collaborate, have a question about Auto Dash, or want to challenge me
-                        in Space Renegades, my inbox is open.</p>
-                    <div class="footer-socials">
-                        <a href="https://github.com/Manathos/Manathos.com" target="_blank"
-                            class="btn btn-outline btn-icon" aria-label="Github"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://twitter.com" target="_blank" class="btn btn-outline btn-icon"
-                            aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
+                    <h2 class="gradient-text">Let's Build the Next One</h2>
+                    <p>Open to project conversations, feedback on Star Stations, and collaboration around games,
+                        utilities, or interactive web experiences.</p>
                 </div>
-                <div class="contact-form-container">
-                    <!-- Formspree Endpoint: Replace 'placeholder_form_id' with actual ID (e.g., xojbwydv) -->
-                    <form action="https://formspree.io/f/placeholder_form_id" method="POST" class="contact-form">
-                        <div class="input-group">
-                            <input type="text" id="name" name="name" required placeholder=" ">
-                            <label for="name">Alias / Name</label>
-                        </div>
-                        <div class="input-group">
-                            <input type="email" id="email" name="email" required placeholder=" ">
-                            <label for="email">Comms frequency (Email)</label>
-                        </div>
-                        <div class="input-group">
-                            <textarea id="message" name="message" required placeholder=" " rows="4"></textarea>
-                            <label for="message">Transmission Details</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Transmit Message <i
-                                class="fa-solid fa-paper-plane" style="margin-left:8px;"></i></button>
-                    </form>
+                <div class="contact-actions">
+                    <a href="https://github.com/Manathos/Manathos.com" target="_blank" rel="noopener"
+                        class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://star-stations.manathos.com" target="_blank" rel="noopener"
+                        class="btn btn-primary"><i class="fa-solid fa-play"></i> Play Star Stations</a>
                 </div>
             </div>
 
             <div class="footer-inner-bottom">
                 <div class="footer-brand">
                     <h2>MANATHOS</h2>
-                    <p>Developing the future, one app at a time.</p>
+                    <p>Apps, games, and interactive systems.</p>
                 </div>
                 <div class="copyright">
                     <p>&copy; 2026 Manathos. All rights reserved.</p>
@@ -284,12 +232,10 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top" aria-label="Back to Top">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <!-- Script for animations and interaction -->
     <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-starstations">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Stations | Manathos Games</title>
+    <meta name="description"
+        content="Star Stations is a live Manathos canvas game with mouse flight, mining drones, merchant upgrades, boss encounters, and mobile touch support.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="theme-starstations">
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="background-effects starfield-effects">
+        <div class="grid-overlay"></div>
+    </div>
+
+    <nav class="navbar animate-drop">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><i class="fa-solid fa-arrow-left"
+                    style="margin-right: 12px; font-size: 1rem;"></i> MANATHOS</a>
+            <ul class="nav-links">
+                <li><a href="#systems">Systems</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="https://star-stations.manathos.com" target="_blank" rel="noopener">Play</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="star-hero">
+            <div class="star-hero-bg" aria-hidden="true"></div>
+            <div class="container star-hero-layout">
+                <div class="star-hero-copy">
+                    <span class="badge badge-star animate-fade-in stagger-1">Live Canvas Game</span>
+                    <h1 class="animate-fade-in stagger-2">STAR STATIONS</h1>
+                    <p class="subtitle animate-fade-in stagger-3">Fly through hostile orbital sectors, mine crystals
+                        with drones, survive escalating waves, and spend ore on upgrades when the merchant ship arrives.
+                    </p>
+                    <div class="cta-group animate-fade-in stagger-4">
+                        <a href="https://star-stations.manathos.com" target="_blank" rel="noopener"
+                            class="btn btn-primary btn-star">Play Live <i class="fa-solid fa-arrow-up-right-from-square"
+                                style="margin-left: 8px;"></i></a>
+                        <a href="#systems" class="btn btn-outline">Explore Systems</a>
+                    </div>
+                </div>
+                <div class="star-hero-art animate-fade-in stagger-3">
+                    <img src="assets/starstations/main-menu-box-art-4x3.png" alt="Star Stations key art">
+                </div>
+            </div>
+        </section>
+
+        <section id="systems" class="wrapper">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="gradient-text">Game Systems</h2>
+                    <p>A compact arcade loop with resource pressure, upgrade decisions, and escalating combat.</p>
+                </div>
+
+                <div class="system-grid">
+                    <article class="system-card reveal-up">
+                        <i class="fa-solid fa-crosshairs"></i>
+                        <h3>Mouse Flight</h3>
+                        <p>The ship follows the pointer while cannons fire forward automatically, keeping movement and
+                            positioning at the center of play.</p>
+                    </article>
+                    <article class="system-card reveal-up delay-100">
+                        <i class="fa-solid fa-gem"></i>
+                        <h3>Mining Drones</h3>
+                        <p>Hovering crystal clusters launches drones that carry ore back under fire, turning resource
+                            collection into a tactical risk.</p>
+                    </article>
+                    <article class="system-card reveal-up delay-200">
+                        <i class="fa-solid fa-store"></i>
+                        <h3>Merchant Upgrades</h3>
+                        <p>Score thresholds call in upgrade offers, including weapon systems, auto-mining improvements,
+                            and Guardian Drone support.</p>
+                    </article>
+                    <article class="system-card reveal-up">
+                        <i class="fa-solid fa-skull-crossbones"></i>
+                        <h3>Boss Pressure</h3>
+                        <p>Miniboss salvage, station gatekeepers, mines, laser drones, tanks, and artillery push the
+                            player into faster decisions as the run advances.</p>
+                    </article>
+                    <article class="system-card reveal-up delay-100">
+                        <i class="fa-solid fa-headphones"></i>
+                        <h3>Audio & Video</h3>
+                        <p>Original music, weapon sounds, commander dialogue, and sidekick video sequences give the
+                            canvas game a stronger campaign texture.</p>
+                    </article>
+                    <article class="system-card reveal-up delay-200">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>Touch Ready</h3>
+                        <p>The live build includes mobile sizing and touch-mode handling so the game can be played beyond
+                            desktop mouse control.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper station-loop">
+            <div class="container">
+                <div class="loop-layout reveal-up">
+                    <div>
+                        <span class="project-tag tag-gold">Current Build</span>
+                        <h2>From Planetfall to Station Corridor</h2>
+                        <p>The current Star Stations build moves from an alien mining front into deep-space traffic.
+                            The loop is simple to understand and busy enough to keep improving: dodge, mine, upgrade,
+                            break the picket, and open the corridor.</p>
+                    </div>
+                    <div class="loop-steps">
+                        <div><strong>01</strong><span>Launch sortie</span></div>
+                        <div><strong>02</strong><span>Mine ore under pressure</span></div>
+                        <div><strong>03</strong><span>Choose merchant upgrades</span></div>
+                        <div><strong>04</strong><span>Survive bosses and salvage</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="media" class="wrapper">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="gradient-text">Visual Direction</h2>
+                    <p>Pixel-scaled ships and space combat assets built for fast canvas rendering.</p>
+                </div>
+                <div class="media-grid">
+                    <figure class="media-panel reveal-up">
+                        <img src="assets/starstations/level-two-space-background.png" alt="Star Stations space backdrop">
+                        <figcaption>Deep-space backdrop</figcaption>
+                    </figure>
+                    <figure class="media-panel reveal-up delay-100">
+                        <img src="assets/starstations/level-two-space-station.png" alt="Star Stations orbital station">
+                        <figcaption>Station encounter art</figcaption>
+                    </figure>
+                    <figure class="media-panel reveal-up delay-200">
+                        <img src="assets/starstations/player-ship-assault.png" alt="Star Stations assault ship">
+                        <figcaption>Player ship asset</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <div class="container reveal-up">
+                <div class="star-cta glass-panel">
+                    <div>
+                        <span class="project-tag tag-cyan">Playable Build</span>
+                        <h2>Launch Star Stations</h2>
+                        <p>The live game is hosted separately at the Star Stations subdomain.</p>
+                    </div>
+                    <a href="https://star-stations.manathos.com" target="_blank" rel="noopener"
+                        class="btn btn-primary btn-star">Play Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="game-footer star-footer">
+        <div class="container text-center">
+            <h2 class="glitch-title" data-text="MANATHOS">MANATHOS</h2>
+            <p>&copy; 2026 Star Stations. A Manathos production.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
