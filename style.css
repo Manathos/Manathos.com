@@ -1783,6 +1783,74 @@ html.theme-starstations,
     object-fit: cover;
 }
 
+.star-flip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.3rem;
+    perspective: 1200px;
+}
+
+.star-system-card.project-card {
+    height: 340px;
+    border-radius: var(--radius-card);
+}
+
+.star-system-card .card-inner,
+.star-system-card .card-front,
+.star-system-card .card-back {
+    border-radius: var(--radius-card);
+}
+
+.star-card-front,
+.star-card-back {
+    border-color: var(--border-glass);
+    background: linear-gradient(180deg, rgba(9, 16, 24, 0.94), rgba(5, 7, 11, 0.98));
+}
+
+.star-card-front {
+    padding: 1.6rem;
+    justify-content: space-between;
+}
+
+.star-card-front>i {
+    color: var(--accent-cyan);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.star-card-front h3 {
+    font-size: 1.55rem;
+    margin-bottom: 0.6rem;
+}
+
+.star-card-front p {
+    margin-bottom: 1.25rem;
+}
+
+.star-card-front .interaction-hint {
+    margin-top: auto;
+}
+
+.star-card-back {
+    padding: 2rem;
+}
+
+.star-card-back h3 {
+    color: var(--accent-gold);
+}
+
+.star-card-back ul {
+    margin-bottom: 0;
+}
+
+.star-card-back li {
+    font-size: 0.95rem;
+}
+
+.star-card-back li i {
+    color: var(--accent-cyan);
+}
+
 .system-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1898,7 +1966,8 @@ html.theme-starstations,
     }
 
     .portfolio-grid,
-    .system-grid {
+    .system-grid,
+    .star-flip-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -1937,6 +2006,7 @@ html.theme-starstations,
 
     .portfolio-grid,
     .system-grid,
+    .star-flip-grid,
     .capability-list,
     .loop-layout {
         grid-template-columns: 1fr;
@@ -1944,6 +2014,7 @@ html.theme-starstations,
 
     .portfolio-card,
     .system-card,
+    .star-system-card.project-card,
     .refresh-panel {
         border-radius: 14px;
     }
