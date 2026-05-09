@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Stations | Manathos Games</title>
     <meta name="description"
-        content="Star Stations is a live Manathos canvas game with mouse flight, mining drones, merchant upgrades, boss encounters, and mobile touch support.">
+        content="Play Star Stations, a fast browser bullet hell where pilots choose a ship, blast enemy patrols, mine ore, buy emergency upgrades, and chase the leaderboard.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,8 +31,8 @@
             <a href="index.html" class="logo"><i class="fa-solid fa-arrow-left"
                     style="margin-right: 12px; font-size: 1rem;"></i> MANATHOS</a>
             <ul class="nav-links">
-                <li><a href="#systems">Systems</a></li>
-                <li><a href="#media">Media</a></li>
+                <li><a href="#systems">Features</a></li>
+                <li><a href="#media">Gameplay</a></li>
                 <li><a href="https://play.manathos.com" target="_blank" rel="noopener">Play</a></li>
             </ul>
         </div>
@@ -43,20 +43,26 @@
             <div class="star-hero-bg" aria-hidden="true"></div>
             <div class="container star-hero-layout">
                 <div class="star-hero-copy">
-                    <span class="badge badge-star animate-fade-in stagger-1">Live Canvas Game</span>
+                    <span class="badge badge-star animate-fade-in stagger-1">Low Orbit Bullet Hell</span>
                     <h1 class="animate-fade-in stagger-2">STAR STATIONS</h1>
-                    <p class="subtitle animate-fade-in stagger-3">Fly through hostile orbital sectors, mine crystals
-                        with drones, survive escalating waves, and spend ore on upgrades when the merchant ship arrives.
+                    <p class="subtitle animate-fade-in stagger-3">Pick a ship and dive straight into hostile low orbit.
+                        Star Stations throws you into auto-cannon fire, mineral fields, enemy patrols, and mid-run
+                        upgrades in a fast browser arcade run built for one more try.
                     </p>
                     <div class="cta-group animate-fade-in stagger-4">
                         <a href="https://play.manathos.com" target="_blank" rel="noopener"
-                            class="btn btn-primary btn-star">Play Live <i class="fa-solid fa-arrow-up-right-from-square"
+                            class="btn btn-primary btn-star">Play Now <i class="fa-solid fa-arrow-up-right-from-square"
                                 style="margin-left: 8px;"></i></a>
-                        <a href="#systems" class="btn btn-outline">Explore Systems</a>
+                        <a href="#media" class="btn btn-outline">Watch Gameplay</a>
                     </div>
                 </div>
                 <div class="star-hero-art animate-fade-in stagger-3">
-                    <img src="assets/starstations/main-menu-box-art-4x3.png" alt="Star Stations key art">
+                    <picture>
+                        <source srcset="assets/starstations/star-stations-gameplay-preview.webp" type="image/webp">
+                        <img src="assets/starstations/star-stations-gameplay-poster.png"
+                            alt="Animated Star Stations gameplay with combat, mining, and upgrade choices">
+                    </picture>
+                    <span class="star-preview-label">Live gameplay loop</span>
                 </div>
             </div>
         </section>
@@ -64,26 +70,26 @@
         <section id="systems" class="wrapper">
             <div class="container">
                 <div class="section-header reveal-up">
-                    <h2 class="gradient-text">Game Systems</h2>
-                    <p>A compact arcade loop with resource pressure, upgrade decisions, and escalating combat.</p>
+                    <h2 class="gradient-text">Choose. Mine. Upgrade. Survive.</h2>
+                    <p>Every sortie starts fast: select a fighter, cut through patrols, grab ore when the screen lets you breathe, and spend it before the next wave closes in.</p>
                 </div>
 
                 <div class="star-flip-grid">
                     <article class="project-card star-system-card reveal-flip" tabindex="0">
                         <div class="card-inner">
                             <div class="card-front star-card-front">
-                                <i class="fa-solid fa-crosshairs"></i>
-                                <span class="project-tag tag-cyan">Controls</span>
-                                <h3>Mouse Flight</h3>
-                                <p>The ship follows the pointer while cannons fire forward automatically.</p>
+                                <i class="fa-solid fa-shuttle-space"></i>
+                                <span class="project-tag tag-cyan">Ship Class</span>
+                                <h3>Pick Your Fighter</h3>
+                                <p>Fly balanced, fast, armored, or shielded. The ship you choose changes how bold you can be.</p>
                                 <span class="interaction-hint">Flip to inspect <i class="fa-solid fa-rotate"></i></span>
                             </div>
                             <div class="card-back star-card-back">
-                                <h3>Flight Feel</h3>
+                                <h3>Four Frames</h3>
                                 <ul>
-                                    <li><i class="fa-solid fa-location-crosshairs"></i> Pointer-follow movement</li>
-                                    <li><i class="fa-solid fa-bullseye"></i> Forward auto-fire pressure</li>
-                                    <li><i class="fa-solid fa-wave-square"></i> Dead-zone tuning for control</li>
+                                    <li><i class="fa-solid fa-bolt"></i> Vanguard balanced starter</li>
+                                    <li><i class="fa-solid fa-gauge-high"></i> Needle high-speed interceptor</li>
+                                    <li><i class="fa-solid fa-shield-halved"></i> Bulwark and Wraith defensive picks</li>
                                 </ul>
                             </div>
                         </div>
@@ -91,18 +97,18 @@
                     <article class="project-card star-system-card reveal-flip delay-100" tabindex="0">
                         <div class="card-inner">
                             <div class="card-front star-card-front">
-                                <i class="fa-solid fa-gem"></i>
-                                <span class="project-tag tag-gold">Economy</span>
-                                <h3>Mining Drones</h3>
-                                <p>Hover crystal clusters to launch drones that carry ore back under fire.</p>
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <span class="project-tag tag-gold">Combat</span>
+                                <h3>Thread The Fire</h3>
+                                <p>Your ship tracks the pointer while cannons carve a path through a sky full of return fire.</p>
                                 <span class="interaction-hint">Flip to inspect <i class="fa-solid fa-rotate"></i></span>
                             </div>
                             <div class="card-back star-card-back">
-                                <h3>Ore Loop</h3>
+                                <h3>Arcade Control</h3>
                                 <ul>
-                                    <li><i class="fa-solid fa-robot"></i> Manual and auto-mining drones</li>
-                                    <li><i class="fa-solid fa-clock"></i> Hover charge timing</li>
-                                    <li><i class="fa-solid fa-coins"></i> Ore fuels upgrade decisions</li>
+                                    <li><i class="fa-solid fa-location-crosshairs"></i> Pointer-driven dodging</li>
+                                    <li><i class="fa-solid fa-bullseye"></i> Constant forward fire</li>
+                                    <li><i class="fa-solid fa-burst"></i> Explosions, score bursts, and near misses</li>
                                 </ul>
                             </div>
                         </div>
@@ -110,18 +116,18 @@
                     <article class="project-card star-system-card reveal-flip delay-200" tabindex="0">
                         <div class="card-inner">
                             <div class="card-front star-card-front">
-                                <i class="fa-solid fa-store"></i>
-                                <span class="project-tag tag-cyan">Progression</span>
-                                <h3>Merchant Upgrades</h3>
-                                <p>Score thresholds call in offers for weapons, drones, and defensive tech.</p>
+                                <i class="fa-solid fa-gem"></i>
+                                <span class="project-tag tag-cyan">Ore Rush</span>
+                                <h3>Mine Under Pressure</h3>
+                                <p>Glowing crystal fields tempt you off the safe line. More ore means stronger choices later.</p>
                                 <span class="interaction-hint">Flip to inspect <i class="fa-solid fa-rotate"></i></span>
                             </div>
                             <div class="card-back star-card-back">
-                                <h3>Upgrade Picks</h3>
+                                <h3>Risk Pays</h3>
                                 <ul>
-                                    <li><i class="fa-solid fa-rocket"></i> Fusion missile options</li>
-                                    <li><i class="fa-solid fa-shield-halved"></i> Guardian Drone support</li>
-                                    <li><i class="fa-solid fa-arrow-trend-up"></i> Scaling merchant costs</li>
+                                    <li><i class="fa-solid fa-coins"></i> Collect ore during combat</li>
+                                    <li><i class="fa-solid fa-robot"></i> Drones help feed the economy</li>
+                                    <li><i class="fa-solid fa-box"></i> Cache pressure keeps runs moving</li>
                                 </ul>
                             </div>
                         </div>
@@ -129,18 +135,18 @@
                     <article class="project-card star-system-card reveal-flip" tabindex="0">
                         <div class="card-inner">
                             <div class="card-front star-card-front">
-                                <i class="fa-solid fa-skull-crossbones"></i>
-                                <span class="project-tag tag-gold">Encounters</span>
-                                <h3>Boss Pressure</h3>
-                                <p>Miniboss salvage and station gatekeepers force faster decisions as the run advances.</p>
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                <span class="project-tag tag-gold">Upgrades</span>
+                                <h3>Spend Ore Fast</h3>
+                                <p>When emergency tech appears, pick the upgrade that keeps the run alive a little longer.</p>
                                 <span class="interaction-hint">Flip to inspect <i class="fa-solid fa-rotate"></i></span>
                             </div>
                             <div class="card-back star-card-back">
-                                <h3>Threat Stack</h3>
+                                <h3>Emergency Tech</h3>
                                 <ul>
-                                    <li><i class="fa-solid fa-burst"></i> Mines and laser drones</li>
-                                    <li><i class="fa-solid fa-crosshairs"></i> Tanks and artillery pressure</li>
-                                    <li><i class="fa-solid fa-circle-radiation"></i> Salvage after miniboss breaks</li>
+                                    <li><i class="fa-solid fa-shield-halved"></i> Defensive support cards</li>
+                                    <li><i class="fa-solid fa-rocket"></i> Firepower boosts</li>
+                                    <li><i class="fa-solid fa-clock"></i> Quick choices in the middle of danger</li>
                                 </ul>
                             </div>
                         </div>
@@ -148,18 +154,18 @@
                     <article class="project-card star-system-card reveal-flip delay-100" tabindex="0">
                         <div class="card-inner">
                             <div class="card-front star-card-front">
-                                <i class="fa-solid fa-headphones"></i>
-                                <span class="project-tag tag-cyan">Presentation</span>
-                                <h3>Audio & Video</h3>
-                                <p>Music, weapon sounds, commander dialogue, and sidekick scenes add campaign texture.</p>
+                                <i class="fa-solid fa-tower-broadcast"></i>
+                                <span class="project-tag tag-cyan">Enemy Waves</span>
+                                <h3>Break The Patrol</h3>
+                                <p>Turret ships, red fighters, laser lines, and angled shots turn the whole screen hostile.</p>
                                 <span class="interaction-hint">Flip to inspect <i class="fa-solid fa-rotate"></i></span>
                             </div>
                             <div class="card-back star-card-back">
-                                <h3>Cinematic Layer</h3>
+                                <h3>Pressure Stack</h3>
                                 <ul>
-                                    <li><i class="fa-solid fa-music"></i> Menu and level music</li>
-                                    <li><i class="fa-solid fa-volume-high"></i> Pooled combat audio</li>
-                                    <li><i class="fa-solid fa-video"></i> Commander and sidekick media</li>
+                                    <li><i class="fa-solid fa-crosshairs"></i> Enemy health bars</li>
+                                    <li><i class="fa-solid fa-wand-sparkles"></i> Tracking laser pressure</li>
+                                    <li><i class="fa-solid fa-triangle-exclamation"></i> Fire lanes from multiple angles</li>
                                 </ul>
                             </div>
                         </div>
@@ -167,18 +173,18 @@
                     <article class="project-card star-system-card reveal-flip delay-200" tabindex="0">
                         <div class="card-inner">
                             <div class="card-front star-card-front">
-                                <i class="fa-solid fa-mobile-screen-button"></i>
-                                <span class="project-tag tag-gold">Input</span>
-                                <h3>Touch Ready</h3>
-                                <p>Mobile sizing and touch-mode handling keep the live build playable beyond desktop.</p>
+                                <i class="fa-solid fa-ranking-star"></i>
+                                <span class="project-tag tag-gold">Leaderboard</span>
+                                <h3>Chase The Board</h3>
+                                <p>Every run has a score to beat, a rank to climb, and a pilot name waiting to be replaced.</p>
                                 <span class="interaction-hint">Flip to inspect <i class="fa-solid fa-rotate"></i></span>
                             </div>
                             <div class="card-back star-card-back">
-                                <h3>Device Support</h3>
+                                <h3>One More Try</h3>
                                 <ul>
-                                    <li><i class="fa-solid fa-up-down-left-right"></i> Touch steering behavior</li>
-                                    <li><i class="fa-solid fa-expand"></i> Dynamic viewport sizing</li>
-                                    <li><i class="fa-solid fa-hand-pointer"></i> Tap-friendly action handling</li>
+                                    <li><i class="fa-solid fa-table-list"></i> Title-screen leaderboard</li>
+                                    <li><i class="fa-solid fa-star"></i> Points from enemy kills</li>
+                                    <li><i class="fa-solid fa-rotate-right"></i> Fast restart energy</li>
                                 </ul>
                             </div>
                         </div>
@@ -191,17 +197,17 @@
             <div class="container">
                 <div class="loop-layout reveal-up">
                     <div>
-                        <span class="project-tag tag-gold">Current Build</span>
-                        <h2>From Planetfall to Station Corridor</h2>
-                        <p>The current Star Stations build moves from an alien mining front into deep-space traffic.
-                            The loop is simple to understand and busy enough to keep improving: dodge, mine, upgrade,
-                            break the picket, and open the corridor.</p>
+                        <span class="project-tag tag-gold">Arcade Run</span>
+                        <h2>Every Sortie Is A Small War Story</h2>
+                        <p>Launch from the hangar, punch through the first patrol, make a greedy dive for ore, and hope
+                            the next upgrade is enough to pull the ship back from the edge. Star Stations is built around
+                            that quick arcade rhythm: danger, reward, mistake, recovery.</p>
                     </div>
                     <div class="loop-steps">
-                        <div><strong>01</strong><span>Launch sortie</span></div>
-                        <div><strong>02</strong><span>Mine ore under pressure</span></div>
-                        <div><strong>03</strong><span>Choose merchant upgrades</span></div>
-                        <div><strong>04</strong><span>Survive bosses and salvage</span></div>
+                        <div><strong>01</strong><span>Choose your fighter</span></div>
+                        <div><strong>02</strong><span>Push through enemy fire</span></div>
+                        <div><strong>03</strong><span>Grab ore and buy upgrades</span></div>
+                        <div><strong>04</strong><span>Climb the leaderboard</span></div>
                     </div>
                 </div>
             </div>
@@ -210,21 +216,25 @@
         <section id="media" class="wrapper">
             <div class="container">
                 <div class="section-header reveal-up">
-                    <h2 class="gradient-text">Visual Direction</h2>
-                    <p>Pixel-scaled ships and space combat assets built for fast canvas rendering.</p>
+                    <h2 class="gradient-text">Gameplay Preview</h2>
+                    <p>See the run open up: pick your frame, launch into fire, grab what ore you can, and fight for the next upgrade.</p>
                 </div>
                 <div class="media-grid">
                     <figure class="media-panel reveal-up">
-                        <img src="assets/starstations/level-two-space-background.png" alt="Star Stations space backdrop">
-                        <figcaption>Deep-space backdrop</figcaption>
+                        <picture>
+                            <source srcset="assets/starstations/star-stations-gameplay-preview.webp" type="image/webp">
+                            <img src="assets/starstations/star-stations-gameplay-poster.png"
+                                alt="Animated Star Stations gameplay with enemy fire and upgrade choices">
+                        </picture>
+                        <figcaption>Live combat, ore pressure, and upgrade choices</figcaption>
                     </figure>
                     <figure class="media-panel reveal-up delay-100">
-                        <img src="assets/starstations/level-two-space-station.png" alt="Star Stations orbital station">
-                        <figcaption>Station encounter art</figcaption>
+                        <img src="assets/starstations/live-ship-select.png" alt="Star Stations current ship selection screen">
+                        <figcaption>Choose the frame that fits your run</figcaption>
                     </figure>
                     <figure class="media-panel reveal-up delay-200">
-                        <img src="assets/starstations/player-ship-assault.png" alt="Star Stations assault ship">
-                        <figcaption>Player ship asset</figcaption>
+                        <img src="assets/starstations/live-main-menu.png" alt="Star Stations current main menu and leaderboard">
+                        <figcaption>Start a pilot and chase the board</figcaption>
                     </figure>
                 </div>
             </div>
@@ -234,12 +244,12 @@
             <div class="container reveal-up">
                 <div class="star-cta glass-panel">
                     <div>
-                        <span class="project-tag tag-cyan">Playable Build</span>
-                        <h2>Launch Star Stations</h2>
-                        <p>The live game is hosted separately at the Star Stations subdomain.</p>
+                        <span class="project-tag tag-cyan">Playable Now</span>
+                        <h2>Ready For Low Orbit?</h2>
+                        <p>The current browser build is live. Pick a ship, push your score, and see how long you can keep the run alive.</p>
                     </div>
                     <a href="https://play.manathos.com" target="_blank" rel="noopener"
-                        class="btn btn-primary btn-star">Play Now</a>
+                        class="btn btn-primary btn-star">Play Star Stations</a>
                 </div>
             </div>
         </section>

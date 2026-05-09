@@ -1771,16 +1771,41 @@ html.theme-starstations,
 }
 
 .star-hero-art {
+    position: relative;
     border: 1px solid rgba(55, 220, 255, 0.25);
     border-radius: var(--radius-card);
     overflow: hidden;
     box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
 }
 
+.star-hero-art picture,
+.media-panel picture {
+    display: block;
+}
+
 .star-hero-art img {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
+}
+
+.star-preview-label {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid rgba(55, 220, 255, 0.36);
+    border-radius: 999px;
+    background: rgba(5, 7, 11, 0.76);
+    color: var(--accent-cyan);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    backdrop-filter: blur(10px);
 }
 
 .star-flip-grid {
@@ -1921,18 +1946,13 @@ html.theme-starstations,
 
 .media-panel img {
     width: 100%;
-    height: 360px;
+    aspect-ratio: 16 / 9;
+    height: auto;
     object-fit: cover;
 }
 
-.media-panel:nth-child(1) img {
-    object-position: center 28%;
-}
-
 .media-panel:nth-child(3) img {
-    object-fit: contain;
-    padding: 2rem;
-    background: radial-gradient(circle at center, rgba(55, 220, 255, 0.13), transparent 55%), #05070b;
+    object-position: center center;
 }
 
 .media-panel figcaption {
@@ -2058,6 +2078,6 @@ html.theme-starstations,
     }
 
     .media-panel img {
-        height: 280px;
+        aspect-ratio: 16 / 9;
     }
 }
